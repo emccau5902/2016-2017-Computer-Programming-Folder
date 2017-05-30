@@ -1,0 +1,74 @@
+
+First steps...
+
+a. Fix the bug in the run function so being faster helps you get away. (Switch the + & - if you haven't done so already.)
+b. Run the program once and test an encounter with: g.encounter(pat, zoeotto). Run a few test encounters so that you can be sure you understand the events that make up encounters.
+c. Test a battle with: g.battle(pat, jessie). Run a few test battles so that you can be sure you understand the events that make up battles.
+
+
+To show...
+
+1. Swap out Moves, Pokemann, Players, and NPCs with your own. Copy and paste your __main__ here.
+lol, i didnt make any new pokemann, players, etc i just used place holders
+2. Modify any output you feel would make game play more informative. What did you change? Don't post code, just describe where you modified output and why. i mostly changed the output to have less exclamations, to make it more neutral in tone, so it conincides more with the orginal games.
+
+3. Test an encounter again. This time, demonstrate
+	a. An instance where you faint the target
+>>> g.battle(pat, jessie)
+You found Jessie!
+Jessie has the following Pokeman:
+Coopasaur (health=100)
+Mayfieldarow (health=90)
+Katlevee (health=140)
+Marcelax (health=30)
+
+Your Coopasaur is ready.
+Would you like to (f)ight or (s)witch out? f
+
+Select a move:
+1) Homework (power=30)
+2) Pop quiz (power=30)
+3) ID Violation (power=30)
+Your choice: 3
+
+Coopasaur hits Coopasaur with ID Violation for 150.
+Coopasaur fainted!
+	
+	b. An instance where you catch the target
+>>> g.encounter(pat, caseypuff)
+You found a Caseypuff! (health=170)
+
+Your Coopasaur is ready.
+Would you like to (f)ight, (c)atch, (r)un, or (s)witch out? c
+
+You caught a Caseypuff!
+
+	c. An instance where you run
+>>> g.encounter(pat, caseypuff)
+You found a Caseypuff! (health=170)
+
+Your Coopasaur is ready.
+Would you like to (f)ight, (c)atch, (r)un, or (s)witch out? r
+
+You got away!
+	d. An instance where the target defeats your entire party. (Switching out often will help you lose.)
+>>> g.battle(pat, jessie)
+You found Jessie!
+Jessie has the following Pokeman:
+Coopasaur (health=100)
+Mayfieldarow (health=90)
+Katlevee (health=140)
+Marcelax (health=30)
+-bunch of switching out here-
+Marcelax hits Blakachu with Homework for 120.
+Blakachu fainted!
+You have lost.
+
+4. Test the battle again. Demonstrate
+	a. An instance where you defeat the NPC
+-too long to put here, its just battling, works normally-
+Andrewag hits Katlevee with Excessive Talking for 60.
+Katlevee fainted!
+Jessie has lost.
+	b. An instance where you lose to the NPC
+look at #3, d.
